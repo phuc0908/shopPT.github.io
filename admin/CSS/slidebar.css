@@ -1,0 +1,22 @@
+/* CONTAINER LEFT */
+
+.admin-container-left ul li ul li a:hover {
+    color: rgb(0, 140, 186);
+}
+.admin-container-left {
+    background: rgb(254, 251, 254);
+    width: 20%;
+    height: 100vh;
+    padding: 50px 0 0 20px;
+    text-align: left;
+}
+
+.admin-container-left > ul > li > a {
+    font-weight: bold;
+}
+.admin-container-left ul > li {
+    margin: 6px 0;
+}
+.admin-container-left ul ul {
+    margin-left: 20px;
+}

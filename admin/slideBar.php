@@ -4,22 +4,22 @@
           <li>
             <a href="#">Danh Mục</a>
             <ul>
-              <li><a href="#">Thêm Danh Mục</a></li>
-              <li><a href="#">Danh Sách Danh Mục</a></li>
+              <li><a href="type_add.php">Thêm Danh Mục</a></li>
+              <li><a href="type_list.php">Danh Sách Danh Mục</a></li>
             </ul>
           </li>
           <li>
             <a href="#">Loại Sản Phẩm</a>
             <ul>
-              <li><a href="#">Thêm Loại Sản Phẩm</a></li>
-              <li><a href="#">Danh Sách Loại Sản Phẩm</a></li>
+              <li><a href="cartegory_add.php">Thêm Loại Sản Phẩm</a></li>
+              <li><a href="cartegory_list.php">Danh Sách Loại Sản Phẩm</a></li>
             </ul>
           </li>
           <li>
             <a href="#">Sản Phẩm</a>
             <ul>
-              <li><a href="#">Thêm Sản Phẩm</a></li>
-              <li><a href="#">Danh Sách Sản Phẩm</a></li>
+              <li><a href="product_add.php">Thêm Sản Phẩm</a></li>
+              <li><a href="product_list.php">Danh Sách Sản Phẩm</a></li>
             </ul>
           </li>
         </ul>
