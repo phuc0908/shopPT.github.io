@@ -1,6 +1,6 @@
 <?php
-  include "header.php";
-  include "slideBar.php";
+  include "part/header.php";
+  include "part/slideBar.php";
   include "Class/Class_Cartegory.php";
   
  ?>
@@ -11,8 +11,16 @@
     $show_result = $cartegory->show();
           
  ?>
+ <style>
+  td {
+  white-space: nowrap;
+  }
 
- <div class="admin-container-right">
+ </style>
+
+
+
+ <div class="admin-container-right" >
     <div class="admin-container-type-list">
           <h1>Danh Sách Loại Sản Phẩm</h1>
           <table>
@@ -20,7 +28,7 @@
               <th>STT</th>
               <th>ID</th>
               <th>Tên</th>
-              <th>ID Danh Mục</th>
+              <th>Tên Danh Mục</th>
               <th>Tùy Biến</th>
             </tr>
             <?php
@@ -33,7 +41,7 @@
               <td><?php echo $i?></td>
               <td><?php echo $result['ID']?></td>
               <td><?php echo $result['Name']?></td>
-              <td><?php echo $result['ID_type']?></td>
+              <td><?php echo $result['name_type']?></td>
               <td><a href="cartegory_edit.php?ID=<?php echo $result['ID'] ?>">Sửa</a> | <a href="cartegory_delete.php?ID=<?php echo $result['ID'] ?>">Xóa</a></td>
             </tr>
             <?php
@@ -45,6 +53,6 @@
       </div>
     </section>
 
-    <script src="JS/script.js"></script>
+  
   </body>
 </html>

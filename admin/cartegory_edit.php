@@ -1,6 +1,6 @@
 <?php
-  include "header.php";
-  include "slideBar.php";
+ include "part/header.php";
+ include "part/slideBar.php";
   include "Class/Class_Cartegory.php"
  ?>
  <?php
@@ -37,7 +37,7 @@
  <?php
     $cartegory = new Class_cartegory();
 
-    if (isset($_POST["cartegory_name"])) {
+    if (isset($_POST["cartegory_name"],$_POST["type_id"])) {
 
         $cartegory_name =$_POST['cartegory_name'];
         $type_id =$_POST['type_id'];
@@ -54,12 +54,12 @@
 
  <div class="admin-container-right">
         <div class="admin-container-type-add">
-          <h1>Thêm Danh Mục</h1>
+          <h1>Sửa Danh Mục</h1>
           <form action="" method="POST">
             <!--  -->
           <select name="type_id" id="">
                 <option disabled value="#" >--Chọn danh mục</option>
-                <option selected value="<?php echo $result_type['ID']?>" ><?php echo $result_type['Name']?></option>
+                <option selected disabled value="<?php echo $result_type['ID']?>" ><?php echo $result_type['Name']?></option>
                 <?php 
                 if($show_type){
                     While($result_show_type = $show_type->fetch_assoc()){
@@ -82,6 +82,6 @@
       </div>
     </section>
 
-    <script src="JS/script.js"></script>
+   
   </body>
 </html>

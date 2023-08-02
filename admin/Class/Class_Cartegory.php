@@ -1,5 +1,5 @@
 <?php
-include "Database_sp/database.php";
+include "Database/database.php";
 ?>
 
 <?php
@@ -13,7 +13,6 @@ include "Database_sp/database.php";
         public function insert($cartegory_name,$type_id){
             $query = "INSERT INTO cartegories(Name,ID_type) values ('$cartegory_name','$type_id')";
             $this->db->row($query);
-            header('Location:cartegory_list.php');
         }
         public function get($ID){
             $query = "SELECT * FROM cartegories WHERE ID='$ID'";
@@ -33,7 +32,10 @@ include "Database_sp/database.php";
             return $result;
         }
         public function show(){
-            $query = "SELECT * FROM cartegories ORDER BY ID DESC";
+            $query =" SELECT c.ID,c.Name,t.Name as name_type  FROM cartegories c 
+                      INNER JOIN type_cartegory t  ON c.ID_type = t.ID 
+                      ORDER BY ID DESC";
+
             $result = $this->db->select($query);
             return $result;
         }

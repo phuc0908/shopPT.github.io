@@ -1,6 +1,6 @@
 <?php
-  include "header.php";
-  include "slideBar.php";
+  include "part/header.php";
+  include "part/slideBar.php";
   include "Class/Class_Type.php"
  ?>
  <?php
@@ -35,7 +35,7 @@
 
  <div class="admin-container-right">
         <div class="admin-container-type-add">
-          <h1>Thêm Danh Mục</h1>
+          <h1>Sửa Danh Mục</h1>
           <form action="" method="POST">
             <input required type="text" name="type_name" placeholder="Nhập tên danh mục" value="
             <?php echo $result['Name']?>"/>
@@ -45,6 +45,5 @@
       </div>
     </section>
 
-    <script src="JS/script.js"></script>
   </body>
 </html>

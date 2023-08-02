@@ -1,6 +1,6 @@
 <?php
-  include "header.php";
-  include "slideBar.php";
+  include "part/header.php";
+  include "part/slideBar.php";
   include "Class/Class_Cartegory.php";
 
  ?>
@@ -50,6 +50,6 @@
       </div>
     </section>
 
-    <script src="JS/script.js"></script>
+  
   </body>
 </html>

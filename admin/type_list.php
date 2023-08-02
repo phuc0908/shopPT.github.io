@@ -1,6 +1,6 @@
 <?php
-  include "header.php";
-  include "slideBar.php";
+  include "part/header.php";
+  include "part/slideBar.php";
   include "Class/Class_Type.php"
  ?>
 
@@ -8,6 +8,16 @@
     $type = new Class_Type();
     $show_result = $type->show();      
  ?>
+  <style>
+  table{
+    width: 1000px;
+  }
+ 
+  td {
+  white-space: nowrap;
+  }
+
+ </style>
 
  <div class="admin-container-right">
     <div class="admin-container-type-list">
@@ -40,6 +50,5 @@
       </div>
     </section>
 
-    <script src="JS/script.js"></script>
   </body>
 </html>

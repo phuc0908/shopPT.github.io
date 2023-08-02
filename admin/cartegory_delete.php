@@ -4,13 +4,13 @@
 
  ?>
  <?php
-    $type = new Class_Cartegory();
+    $cartegory = new Class_Cartegory();
 
     if(!isset($_GET['ID'])){
-        echo "<script>window.location = 'type_list.php</script>'";
+        echo "<script>window.location = 'cartegory_list.php</script>'";
       }else{
         $ID_cartegory = $_GET['ID'];
       }
-      $delete_cartegory = $type->delete($ID_cartegory);
+      $delete_cartegory = $cartegory->delete($ID_cartegory);
       
  ?>
